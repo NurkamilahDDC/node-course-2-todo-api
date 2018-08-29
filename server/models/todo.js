@@ -16,14 +16,14 @@ var Todo = mongoose.model('Todo', {
         default : null
     } 
  });
- var otherTodo = new Todo({
-    text: 'Something to do'
-    })
+//  var otherTodo = new Todo({
+//     text: 'Something to do'
+//     })
     
-    otherTodo.save().then((doc)=>{
-    console.log(JSON.stringify(doc,undefined,2))},
-    (e)=>{
-    console.log('unable', e);
-    });
+//     otherTodo.save().then((doc)=>{
+//     console.log(JSON.stringify(doc,undefined,2))},
+//     (e)=>{
+//     console.log('unable', e);
+//     });
 
  module.exports = {Todo};
